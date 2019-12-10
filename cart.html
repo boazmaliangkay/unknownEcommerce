@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home </a></li>
+              <li class="breadcrumb-item active" aria-current="page"> Shopping Cart</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <table class="table table-condensed" id="tables">
+            <tr class="tratas">
+              <td class="image">Item</td>
+              <td class="descrition">   </td>
+              <td class="price">Price</td>
+              <td class="quantity">Quantity</td>
+              <td class="total">Total</td>
+              <td ></td>
+            </tr>
+            <tr>
+              <td class="card_product"><a href=""><img src="img/g1.png" alt=""></a></td>
+              <td class="card_description"><a href=""> Colorblock Scuba<br></a> Web ID: 1089772</td>
+              <td class="card_price">$59</td>
+              <td class="card_quantity">
+                <div class="cart_quantity_button">
+                  <a class="cart_quantitiy_up"> + </a>
+                  <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                  <a class="cart_quantity_down" href=""> - </a>
+                </div>
+              </td>
+              <td class="card_total">$59</td>
+              <td class="card_delete">
+                <a class="cart_quantity_delete" href=""><i class="fa fa-times"><i class="fa fa-window-close"></i></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="card_product"><a href=""><img src="img/g2.png" alt=""></a></td>
+              <td class="card_description"><a href=""> Colorblock Scuba<br></a> Web ID: 1089772</td>
+              <td class="card_price">$59</td>
+              <td class="card_quantity">
+                <div class="cart_quantity_button">
+                  <a class="cart_quantitiy_up"> + </a>
+                  <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                  <a class="cart_quantity_down" href=""> - </a>
+                </div>
+              </td>
+              <td class="card_total">$59</td>
+              <td class="card_delete">
+                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="" class="card_product"><img src="img/g3.png" alt=""></a></td>
+              <td><a href="" class="card_description"> Colorblock Scuba<br></a> Web ID: 1089772</td>
+              <td class="card_price">$59</td>
+              <td class="card_quantity">
+                <div class="cart_quantity_button">
+                  <a class="cart_quantitiy_up"> + </a>
+                  <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                  <a class="cart_quantity_down" href=""> - </a>
+                </div>
+              </td>
+              <td class="card_total">$59</td>
+              <td class="card_delete">
+                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+              </td>
+            </tr>
+            
+            
+          </table>
+        </div>
+        
+         <div class="col-md-12"> 
+                <button type="button" id="showtable">Sembunyikan Produk</button>
+                <button type="button" id="hidetable">Tampilkan Produk</button>
+         </div>
+        <div class="col-md-12">
+          <div class="">
+               <h1>What would you like to do next?</h1>
+               <p> Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+          </div>
+          
+        </div>
+        <div class="col-md-6" id="chose_area">
+          <div class="chose_area">
+            <ul class="user_option">
+              <li>
+                <input type="checkbox">
+                <label>Use Coupon Code</label>
+              </li>
+              <li>
+                <input type="checkbox">
+                <label>Use Gift Voucher</label>
+              </li>
+              <li>
+                <input type="checkbox">
+                <label>Estimate Shipping &amp; Taxes</label>
+              </li>
+            </ul>
+            <ul class="user_info">
+              <li class="single_field">
+                <label>Country:</label>
+                <select>
+                  <option>United States</option>
+                  <option>Bangladesh</option>
+                  <option>UK</option>
+                  <option>India</option>
+                  <option>Pakistan</option>
+                  <option>Ucrane</option>
+                  <option>Canada</option>
+                  <option>Dubai</option>
+                </select>
+                
+              </li>
+              <li class="single_field">
+                <label>Region / State:</label>
+                <select>
+                  <option>Select</option>
+                  <option>Dhaka</option>
+                  <option>London</option>
+                  <option>Dillih</option>
+                  <option>Lahore</option>
+                  <option>Alaska</option>
+                  <option>Canada</option>
+                  <option>Dubai</option>
+                </select>
+                
+              </li>
+              <li class="single_field zip-field">
+                <label>Zip Code:</label>
+                <input type="text">
+              </li>
+            </ul>
+            <a class="btn btn-default update" href="">Get Quotes</a>
+            <a class="btn btn-default check_out" href="">Continue</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="total_area">
+            <ul>
+              <input type="text" name="" value="" placeholder="Card Sub Total          $59" disabled=""> <br>
+              <input type="text" name="" value="" placeholder="Eco Tax                       $2" disabled=""><br>
+              <input type="text" name="" value="" placeholder="Shipping Cost          Free " disabled=""><br>
+              <input type="text" name="" value="" placeholder="total                          $61" disabled="">
+              
+            </ul>
+            <a class="btn btn-default update" id="updatee">Update</a>
+            <a class="btn btn-default check_out" id="downdatee" >Check Out</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+  </body>
+</html>

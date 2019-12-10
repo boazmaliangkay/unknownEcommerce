@@ -1,0 +1,35 @@
+
+
+.total_area a:hover{
+		background-color: red;
+}
+.total_area a{
+	background: orange;
+}
+#tables{
+	display: none;
+}
+
+button{
+	background: orange;
+}
+
+.chose_area a{
+	background: orange;
+}
+
+.tratas{
+	background-color: orange
+}
+
+.chose_area{
+	border: 1px solid black;
+}
+
+.total_area{
+	border:1px solid black;
+}
+
+ul{
+	list-style: none;
+}
