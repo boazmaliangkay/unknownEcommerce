@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .step1 {
+            box-sizing: border-box;
+        }
+
+        .step1 h2 {
+            background: none repeat scroll 0 0 #F0F0E9;
+            color: #363432;
+            font-size: 20px;
+            margin-bottom: 35px;
+            padding: 10px 25px;
+        }
+
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        .options ul li {
+            margin: 10px;
+        }
+
+        .options ul li a {
+            color: orange;
+            font-weight: 700;
+
+        }
+
+
+
+        .shopper-info form input {
+            background: #F0F0E9;
+            border: 0 none;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            font-weight: 300;
+        }
+
+        .bill-to form input {
+            background: #F0F0E9;
+            border: 0 none;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            font-weight: 300;
+        }
+
+        textarea {
+            background: #F0F0E9;
+            border: 0;
+            color: #696763;
+            padding: 5px;
+            width: 100%;
+            border-radius: 0;
+            resize: none;
+        }
+
+        thead {
+            background-color: orange;
+            padding-bottom: 0.8px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #c49102;
+            color: #ffc30b;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            opacity: 50%;
+        }
+
+        #myBtn:hover {
+            background-color: #f5f5dc;
+            opacity: 100%;
+        }
+
+        .shopper-info a {
+            background-color: orange;
+            border-color: orange;
+        }
+
+        .shopper-info a:hover {
+            background-color: orangered;
+            color: whitesmoke;
+            text-decoration: none;
+            box-shadow: 0 0 10px orangered, 0 0 40px orangered, 0 0 80px yellow;
+            transition-delay: 0.3s;
+            border-color: orange;
+        }
+    </style>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <section id="wrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="navbar-brand" href="#"><img
+                            src="https://demo.themeum.com/html/eshopper/images/home/logo.png" alt="logo"></a>
+                </div>
+                <ul class="col-md-9 nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-shopping-cart"></i>Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Confirm</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="options">
+                <h3>New User</h3>
+                <p>Checkout options</p>
+                <ul class="nav">
+                    <li>
+                        <label><input type="checkbox"> Register Account</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"> Guest Checkout</label>
+                    </li>
+                    <li>
+                        <a href="">Cancel</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Registrasi">
+                <p>Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest
+                </p>
+            </div>
+
+            <div class="Informasi">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="shopper-info">
+                            <p>Shopper Information</p>
+                            <form>
+                                <input type="text" placeholder="Display Name">
+                                <input type="text" placeholder="User Name">
+                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Confirm password">
+                            </form>
+                            <a class="btn btn-primary" href="">Submit</a>
+                            <a class="btn btn-primary" href="">Sign up Via Google</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 clearfix">
+                        <div class="bill-to">
+                            <p>Bill To</p>
+                            <div class="form1">
+                                <form>
+                                    <input type="text" placeholder="Company Name">
+                                    <input type="text" placeholder="Email*">
+                                    <input type="text" placeholder="Title">
+                                    <input type="text" placeholder="First Name *">
+                                    <input type="text" placeholder="Middle Name">
+                                    <input type="text" placeholder="Last Name *">
+                                    <input type="text" placeholder="Address 1 *">
+                                    <input type="text" placeholder="Address 2">
+                                </form>
+                            </div>
+                            <div class="form2">
+                                <form>
+                                    <input type="text" placeholder="KODE">
+                                    <select>
+                                        <option>-- Country --</option>
+                                        <option>USA</option>
+                                        <option>USA</option>
+                                        <option>UK</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                    </select>
+                                    <select>
+                                        <option>-- State / Province / Region --</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                        <option>INDO</option>
+                                    </select>
+                                    <input type="password" placeholder="Confirm password">
+                                    <input type="text" placeholder="Phone *">
+                                    <input type="text" placeholder="Mobile Phone">
+                                    <input type="text" placeholder="Fax">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="order-message">
+                            <p>Shipping Order</p>
+                            <textarea name="message" placeholder="....." rows="16"></textarea>
+                            <label><input type="checkbox"> Shipping to bill address</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-payment">
+                <h2>Review &amp; Payment</h2>
+            </div>
+
+            <div class="table-responsive cart_info">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr class="cart_menu">
+                            <td class="image">Item</td>
+                            <td class="description"></td>
+                            <td class="price">Price</td>
+                            <td class="quantity">Quantity</td>
+                            <td class="total">Total</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/cart/one.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Ketoprak</a></h4>
+                                <p>1234567890</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>Serebuan</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1"
+                                        autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$59</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/cart/two.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Nasi Goreng</a></h4>
+                                <p>1234567890</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>duarebuan</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1"
+                                        autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/cart/three.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Steak Ayam</a></h4>
+                                <p>1234567890</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>Mahal</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1"
+                                        autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">Rp</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">&nbsp;</td>
+                            <td colspan="2">
+                                <table class="table table-condensed total-result">
+                                    <tbody>
+                                        <tr>
+                                            <td>Cart Sub Total</td>
+                                            <td>Rp</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Exo Tax</td>
+                                            <td>Rp.2</td>
+                                        </tr>
+                                        <tr class="shipping-cost">
+                                            <td>Shipping Cost</td>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td><span>Rp</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="payment-options">
+                <span>
+                    <label><input type="checkbox"> Direct Bank Transfer</label>
+                </span>
+                <span>
+                    <label><input type="checkbox"> Check Payment</label>
+                </span>
+                <span>
+                    <label><input type="checkbox"> Paypal</label>
+                </span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>E-Shopper</h1>
+                                        <h2>Free E-Commerce Template</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae ad
+                                            delectus, sequi
+                                            reiciendis eius obcaecati facere, porro necessitatibus libero alias aliquid?
+                                            Ad ipsa
+                                            unde voluptatibus officiis laborum impedit nemo?</p>
+                                        <button>Get it Now</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://demo.themeum.com/html/eshopper/images/home/girl1.jpg"
+                                            class="d-block w-100" style="background-size: cover;" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>E-Shopper</h1>
+                                        <h2>100% Responsive Design</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae ad
+                                            delectus, sequi
+                                            reiciendis eius obcaecati facere, porro necessitatibus libero alias aliquid?
+                                            Ad ipsa
+                                            unde voluptatibus officiis laborum impedit nemo?</p>
+                                        <button>Get it Now</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://demo.themeum.com/html/eshopper/images/home/girl2.jpg"
+                                            class="d-block w-100" style="background-size: cover;" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>E-Shopper</h1>
+                                        <h2>Free E-Commerce Template</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae ad
+                                            delectus, sequi
+                                            reiciendis eius obcaecati facere, porro necessitatibus libero alias aliquid?
+                                            Ad ipsa
+                                            unde voluptatibus officiis laborum impedit nemo?</p>
+                                        <button>Get it Now</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://demo.themeum.com/html/eshopper/images/home/girl3.jpg"
+                                            class="d-block w-100" style="background-size: cover;" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="card-footer text-muted">
+                2 days ago
+              </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.4.1.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
