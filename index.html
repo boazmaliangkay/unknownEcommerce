@@ -43,13 +43,13 @@
             </div>
             <ul class="col-md-9 nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Checkout</a>
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-money"></i> Checkout</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-shopping-cart"></i>Cart</a>
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link text-dark" href="#"><i class="fa fa-user-circle"></i> Login</a>
                 </li>
             </ul>
         </div>
@@ -62,13 +62,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link text-dark" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Confirm</a>
+                        <a class="nav-link text-dark" href="#">Confirm</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -397,7 +397,18 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $("a").hover(function () {
+                $(this).removeClass("text-dark");
+                $(this).addClass("text-warning");
+            });
+            $("a").mouseout(function () {
+                $(this).removeClass("text-warning");
+                $(this).addClass("text-dark");
+            });
+        });
+    </script>
 </body>
 
 </html>
