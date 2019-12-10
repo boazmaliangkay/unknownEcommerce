@@ -31,6 +31,12 @@
             background-color: #f5f5dc;
             opacity: 100%;
         }
+
+        .carousel-inner .carousel-item {
+            transition: -webkit-transform 2s ease;
+            transition: transform 2s ease;
+            transition: transform 2s ease, -webkit-transform 2s ease;
+        }
     </style>
 </head>
 
@@ -78,11 +84,11 @@
             </div>
         </nav>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -135,11 +141,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -369,11 +375,11 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="bg-dark text-light">Copyright &copy; Kelompok 2: Jojo,Jere,Zain,Eri</footer>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
+
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
@@ -410,6 +416,10 @@
                 $(this).addClass("text-dark");
             });
         });
+
+        // $(document).ready(function () {
+        //     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 1000  // 2 seconds
+        // });
     </script>
 </body>
 
